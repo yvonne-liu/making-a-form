@@ -8,19 +8,18 @@
     </head>
     <body>
         <h1>Making a form</h1>
-        <form action="https://learn-forms.netlify.com/submit/part3">      
+        <form action="https://jsonplaceholder.typicode.com/posts">      
             Name<br>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" class="input" id="name" name="name" required><br>
             Email<br>
-            <input type="email" id="email" name="email"><br>
-            Number<br>
-            <input type="text" id="tel" name="tel"><br>
+            <input type="email" class="input" id="email" name="email" required><br>
+            Telephone<br>
+            <input type="number" class="input" id="tel" name="tel" required><br>
             Preferred Contact Method<br>
-            <label for="contactChoice1"><input id="contactChoice1" type="radio" name="contact" value="email"> Email</label>
-            <label for="contactChoice2"><input id="contactChoice2" type="radio" name="contact" value="tel"> Telephone</label>
-            <label for="contactChoice3"><input id="contactChoice3" type="radio" name="contact" value="post"> Post</label><br>
+            <label for="contactChoice1"><input id="contactChoice1" type="radio" name="contact" value="email" checked> Email</label>
+            <label for="contactChoice2"><input id="contactChoice2" type="radio" name="contact" value="tel"> Telephone</label><br>
             Message<br>
-            <textarea id="message" name="message"></textarea><br>
+            <textarea class="input" id="message" name="message" placeholder="Write some shit"></textarea><br>
             <label for="marketingConsent"><input type="checkbox" id="marketingConsent" name="marketingConsent"> I give my consent</label><br>
             <button type="submit">Submit</button>
         </form>
